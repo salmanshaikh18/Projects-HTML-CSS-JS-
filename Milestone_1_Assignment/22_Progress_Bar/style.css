@@ -1,0 +1,20 @@
+/* Define the style for the progress bar container */
+#progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #ddd;
+    z-index: 9999;
+}
+/* Define the style for the progress bar */
+#progress-bar {
+    height: 5px;
+    background-color: #4caf50;
+    width: 0%;
+}
+
+body {
+    height: 150vh;
+}

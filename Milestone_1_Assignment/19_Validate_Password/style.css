@@ -1,0 +1,44 @@
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+p {
+    font-size: 20px;
+}
+#submitBtnp {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    box-shadow: 0 0 10px blue;
+}
+
+button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 4px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: blueviolet;
+    box-shadow: 0 0 5px black;
+}
+
+form input {
+    font-size: 20px;
+}
+
+form label {
+    font-size: 25px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

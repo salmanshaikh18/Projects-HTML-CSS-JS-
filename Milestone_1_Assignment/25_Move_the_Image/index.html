@@ -1,0 +1,58 @@
+<!-- 25. Move the Image
+The objective is to write a JavaScript program that enables an image to move according to the direction
+specified by the arrow keys. The program must be able to recognize and respond to the input from the arrow
+keys, and accordingly, update the position of the image on the screen. The program should be able to handle
+the movement of the image in all directions, including up, down, left, and right, in a smooth and responsive
+manner. Have a look at the event key codes before starting the project. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 30vh;
+    }
+  </style>
+</head>
+<body>
+  <img id="image" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+
+  <script>
+    // Get the image element
+    const image = document.getElementById('image');
+
+    // Set the initial position of the image
+    let x = 0;
+    let y = 0;
+
+    // Listen for keydown events
+    document.addEventListener('keydown', (event) => {
+      // Get the code of the pressed key
+      const code = event.code;
+
+      // Move the image based on the pressed key
+      switch (code) {
+        case 'ArrowUp':
+          y -= 10;
+          break;
+        case 'ArrowDown':
+          y += 10;
+          break;
+        case 'ArrowLeft':
+          x -= 10;
+          break;
+        case 'ArrowRight':
+          x += 10;
+          break;
+      }
+
+      // Set the position of the image
+      image.style.top = y + 'px';
+      image.style.left = x + 'px';
+    });
+  </script>
+</body>
+</html>

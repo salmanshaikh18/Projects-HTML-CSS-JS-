@@ -1,0 +1,24 @@
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+button {
+    font-size: 25px;
+    padding: 5px 20px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 40px;
+}
